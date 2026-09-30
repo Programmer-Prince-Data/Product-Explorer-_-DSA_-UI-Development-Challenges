@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recently Viewed</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>TechMart - Recently Viewed</h1>
+
+  <section>
+    <h2>Recently Viewed</h2>
+    <button id="clearHistoryBtn">Clear History</button>
+    <div id="historyRow" class="history-row"></div>
+  </section>
+
+  <section>
+    <h2>All Products</h2>
+    <div id="productList" class="cards"></div>
+  </section>
+
+  <div id="modalOverlay" class="modal-overlay">
+    <div class="modal-box">
+      <h2 id="modalTitle"></h2>
+      <div id="modalBody"></div>
+      <button id="closeModalBtn">Close</button>
+    </div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="history.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

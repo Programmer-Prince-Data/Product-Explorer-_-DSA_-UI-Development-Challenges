@@ -1,0 +1,22 @@
+body { font-family: Arial, sans-serif; background: #f2f2f2; margin: 0; padding: 20px; }
+h1 { text-align: center; }
+section { background: white; border: 1px solid #ccc; padding: 15px; margin: 0 auto 20px; max-width: 1000px; }
+input, select, button { padding: 8px; font-size: 14px; margin: 4px; }
+button { background: #3366cc; color: white; border: none; cursor: pointer; }
+button:hover { background: #244a99; }
+button:disabled { background: #999; cursor: not-allowed; }
+.cards { display: flex; flex-wrap: wrap; gap: 15px; }
+.card { border: 1px solid #999; background: #fafafa; padding: 10px; width: 220px; }
+.card h3 { margin: 0 0 8px 0; font-size: 16px; }
+.card p { margin: 4px 0; }
+.price { font-weight: bold; color: #007700; }
+.error { color: red; }
+.empty { color: #666; font-style: italic; }
+@media (max-width: 600px) { .card { width: 100%; } input, select { width: 90%; } }
+
+/* Recently viewed + modal */
+.history-row { display: flex; gap: 10px; overflow-x: auto; padding-bottom: 8px; }
+.history-item { border: 1px solid #999; background: #fafafa; padding: 8px; min-width: 150px; }
+.history-item p { margin: 4px 0; font-size: 13px; }
+.modal-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); overflow: auto; }
+.modal-box { background: white; width: 90%; max-width: 420px; margin: 60px auto; padding: 20px; border: 2px solid #333; }
