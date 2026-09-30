@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Popular Products</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>TechMart - Popular Products</h1>
+
+  <section>
+    <h2>🔥 Popular Products</h2>
+    <label>Show Top:
+      <select id="topK">
+        <option value="3">3</option>
+        <option value="5">5</option>
+        <option value="10">10</option>
+      </select>
+    </label>
+    <p>Popularity = rating × reviews</p>
+    <div id="popularResults" class="cards"></div>
+  </section>
+
+  <script src="../data.js"></script>
+  <script src="popular.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
