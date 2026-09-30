@@ -1,0 +1,15 @@
+body { font-family: Arial, sans-serif; background: #f2f2f2; margin: 0; padding: 20px; }
+h1 { text-align: center; }
+section { background: white; border: 1px solid #ccc; padding: 15px; margin: 0 auto 20px; max-width: 1000px; }
+input, select, button { padding: 8px; font-size: 14px; margin: 4px; }
+button { background: #3366cc; color: white; border: none; cursor: pointer; }
+button:hover { background: #244a99; }
+button:disabled { background: #999; cursor: not-allowed; }
+.cards { display: flex; flex-wrap: wrap; gap: 15px; }
+.card { border: 1px solid #999; background: #fafafa; padding: 10px; width: 220px; }
+.card h3 { margin: 0 0 8px 0; font-size: 16px; }
+.card p { margin: 4px 0; }
+.price { font-weight: bold; color: #007700; }
+.error { color: red; }
+.empty { color: #666; font-style: italic; }
+@media (max-width: 600px) { .card { width: 100%; } input, select { width: 90%; } }

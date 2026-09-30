@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Price Finder</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>TechMart - Price Finder</h1>
+
+  <section>
+    <h2>Find products around a price</h2>
+    <label>Target price: ₹ <input type="number" id="targetPrice" placeholder="70000"></label>
+    <button id="searchBtn">Search</button>
+    <p id="targetError" class="error"></p>
+    <h3>Closest Products</h3>
+    <div id="closestResults" class="cards"></div>
+  </section>
+
+  <section>
+    <h2>Find products in a price range</h2>
+    <label>Min: ₹ <input type="number" id="minPrice" placeholder="50000"></label>
+    <label>Max: ₹ <input type="number" id="maxPrice" placeholder="80000"></label>
+    <button id="rangeBtn">Find products in this range</button>
+    <p id="rangeError" class="error"></p>
+    <p id="rangeCount"></p>
+    <div id="rangeResults" class="cards"></div>
+  </section>
+
+  <script src="../data.js"></script>
+  <script src="finder.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
